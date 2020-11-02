@@ -77,8 +77,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 + COLUMN_NAME + " = '" + expenseData.getName() + "', "
                 + COLUMN_CATEGORY + " = '" + expenseData.getCategory() + "', "
                 + COLUMN_DATE + " = '" + expenseData.getDate() + "', "
-                + COLUMN_AMOUNT + " = '" + expenseData.getAmount() + "',"
-                + COLUMN_NOTE + " = '" + expenseData.getNote() + "'"
+                + COLUMN_AMOUNT + " = '" + expenseData.getAmount().toString() + "', "
+                + COLUMN_NOTE + " = '" + expenseData.getNote() + "' "
                 + "WHERE " + COLUMN_ID + " = '" +
                 expenseData.get_id() + "'";
 
